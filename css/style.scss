@@ -9,7 +9,7 @@ body
     border: 0;
     margin: 0;
     padding: 0;
-    width: 100vw;
+    max-width: 100vw;
     overflow-x: hidden;
 }
 
@@ -286,7 +286,7 @@ section#break-marquee{
     }
 }
 
-section#work{
+section#works{
     width: 100vw;
     min-height: 120vh;
     .work-title{
@@ -341,7 +341,9 @@ section#work{
                         }
                     }
                 }
+
             }
+
             .portfolio-preview-container{
                 width: 60%;
                 display: flex;
@@ -367,7 +369,9 @@ section#work{
                 }
             }
         }
-
+        #bdi {
+            padding-top: 10vh;
+        }
         li ul .portfolio-item-half{
             width: 50vw;
             display: flex;
@@ -439,5 +443,212 @@ section#page-break{
         padding-right: 3vw;
         color: white;
         font-size: 4em;
+    }
+}
+
+section#about{
+    display: flex;
+    max-width: 100vw;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    section-left{
+        width: 40%;
+        .about-content-container{
+            padding-left: 4vw;
+            padding-right: 4vw;
+            h3{
+                font-size: 4em;
+                text-transform: uppercase;
+                margin-bottom: .25em;
+            }
+            p{
+                font-size: 1.2em;
+                line-height: 1.5em;
+            }
+        }
+    }
+    section-right{
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        h3{
+            text-align: left;
+            width: 100%;
+            text-transform: uppercase;
+            letter-spacing: 9px;
+        }
+        .about-logos-container{
+            margin-top: 2.5vh;
+            img{
+                width: 85%;
+            }
+        }
+    }
+}
+
+footer{
+    width: 100vw;
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    &::after{
+        content: ' ';
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background: url('../assets/Home/contact-hero.jpg') no-repeat center;
+        filter: brightness(.5);
+        opacity: .4;
+        background-size:auto;
+        z-index: 0;
+    }
+    h4{
+        z-index: 1;
+        font-size: 8em;
+        text-transform: uppercase;
+        margin-bottom: 1vh;
+        line-height: .8em;
+    }
+    .sub-title{
+        z-index: 1;
+        width: 90vw;
+        font-size: .9em;
+        margin-top: 1vh;
+        text-transform: uppercase;
+        letter-spacing: 1vw;
+    }
+    .contact-item{
+        z-index: 1;
+        width: 90vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        div{
+            min-width: 15vw;
+            h5{
+                font-size: .9em;
+                margin-top: 1vh;
+                text-transform: uppercase;
+                letter-spacing: .5vw;
+            }
+            p{
+                line-height: 1.7em;
+            }
+        }
+    }
+}
+
+.padding-sides{
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+
+.green-text{
+    color:$base-color;
+}
+
+// Brand page styles
+
+section#brand-hero{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    background-repeat: no-repeat;
+}
+
+section#about-brand{
+    width: 92vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    color: white;
+    background: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 50vh;
+    section-left{
+        width: 50%;
+        .about-content-container{
+            h3{
+                font-size: 4em;
+                text-transform: uppercase;
+                margin-bottom: 1vh;
+            }
+            p{
+                font-size: 1.4em;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    section-right{
+        width: 50%;
+        p{
+            font-size: 1.3em;
+            line-height: 1.5em;
+        }
+    }
+}
+
+section#portfolio{
+    .full-portfolio-item {
+        width: 100vw;
+        height: auto;
+        object-fit: contain;
+    }
+    .portfolio-grid{
+
+        width: 100%;
+        display: grid;
+        .grid-portfolio-item-30{
+            grid-row: 1/3;
+        }
+        .grid-portfolio-item-70{
+            grid-row: 2/3;
+        }
+        .grid-portfolio-item-50{
+            grid-row: 1/2;
+        }
+    }
+}
+
+brand-footer#contact{
+    width: 100vw;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    section-left{
+        width: 70%;
+        h4{
+            font-size: 4.3em;
+            text-transform: uppercase;
+            margin-bottom: 1vh;
+        }
+        .sub-title{
+            font-size: 1.5em;
+            margin-top: 1vh;
+            text-transform: uppercase;
+            letter-spacing: 1em;
+        }
+    }
+    section-right{
+        width: 30%;
+        display: flex;
+        flex-direction: row;
+        div{
+            min-width:40%;
+            h5{
+                text-transform: uppercase;
+                letter-spacing: .6em;
+            }
+        }
     }
 }
