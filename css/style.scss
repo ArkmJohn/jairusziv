@@ -652,3 +652,44 @@ brand-footer#contact{
         }
     }
 }
+
+@media only screen and (max-width: 768px) {
+    body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    menu{
+        section-right{
+            ul li a{
+                font-size: 2.5rem;
+            }
+        }
+    }
+    section#home{
+        section-left{
+            .hero-content{
+                .hero-title{
+                    font-size: 4em; 
+                }
+            }
+            .home-hero{
+                width: 50vw;
+                right: 5vw;
+                top: 20vh;
+                position: absolute;
+            }
+        }
+        section-right{
+            z-index: 0;
+            position: absolute;
+            width: 100%;
+        }
+    }
+    section#works{
+        .work-title{
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+            font-size: 3em;
+        }
+    }
+}
