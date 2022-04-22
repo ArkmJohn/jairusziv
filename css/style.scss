@@ -772,7 +772,6 @@ brand-footer#contact{
 
         }
     }
-
     section#page-break{
         min-height: 40vh;
         height: auto;
@@ -799,6 +798,57 @@ brand-footer#contact{
                 align-items: center;
             }
             padding-bottom: 5vh;
+        }
+    }
+    section#brand-hero{
+        width: 100%;
+        padding-top: 25vh;
+        background-position: bottom !important;
+        height: 20vh;
+        background-repeat: no-repeat !important;
+    }
+    section#about-brand{
+        width: 94%;
+        overflow-x: hidden;
+        flex-direction: column;
+        padding: 3%;
+        margin: 0;
+        section-left{
+            width:100%;
+            .about-content-container{
+                h3{
+                    font-size: 2.5em;
+                }
+            }
+        }
+        section-right{
+            width: 100%;
+        }
+    }
+    section#portfolio{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    brand-footer#contact{
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        section-left{
+            width: 94%;
+            .padding-sides{
+                padding: 3%;
+            }
+            h4{
+                font-size: 2.1em !important;
+            }
+            .sub-title{
+                letter-spacing: .3em;
+            }
+        }
+        section-right{
+            width: auto;
+            flex-direction: column;
+            width: 90%;
         }
     }
 }
